@@ -1,0 +1,95 @@
+:root {
+    --primaryColor: red;
+    --secondaryColor: #000;
+    --thirdColor: #000;
+    --fourthColor: #000;
+    --fifthColor: #000;
+
+    --primaryTextColor: #000;
+    --secondaryTextColor: #000;
+    --thirdTextColor: #000;
+    --fourthTextColor: #000;
+    --fifthTextColor: #000;
+
+    --primaryBackgroundColor: #000;
+    --secondaryBackgroundColor: #000;
+    --thirdBackgroundColor: #000;
+    --fourthBackgroundColor: #000;
+    --fifthBackgroundColor: #000;
+
+    --primaryFontFamily: "Roboto", sans-serif;
+
+    --primaryFontSize: 1rem;
+    --secondaryFontSize: 1rem;
+    --thirdFontSize: 1rem;
+    --fourthFontSize: 1rem;
+    --fifthFontSize: 1rem;
+
+    --primaryFontWeight: 400;
+    --secondaryFontWeight: 400;
+    --thirdFontWeight: 400;
+    --fourthFontWeight: 400;
+    --fifthFontWeight: 400;
+
+    --primaryFontStyle: normal;
+    --secondaryFontStyle: normal;
+    --thirdFontStyle: normal;
+
+    --primaryLineHeight: 1.5;
+    --secondaryLineHeight: 1.5;
+    --thirdLineHeight: 1.5;
+
+    --primaryLetterSpacing: 0;
+    --secondaryLetterSpacing: 0;
+
+    --primaryBorderRadius: 0;
+    --secondaryBorderRadius: 0;
+    --thirdBorderRadius: 0;
+
+    --primaryBorderWidth: 0;
+    --secondaryBorderWidth: 0;
+    --thirdBorderWidth: 0;
+
+    --primaryBorderColor: #000;
+    --secondaryBorderColor: #000;
+
+    --primaryBoxShadow: 0 0 0 0 #000;
+
+    --primaryBorder: 0 solid #000;
+    --secondaryBorder: 0 solid #000;
+    --thirdBorder: 0 solid #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &.title {
+        color: var(--primaryTextColor);
+        font-family: var(--primaryFontFamily);
+        font-size: var(--primaryFontSize);
+        font-weight: var(--primaryFontWeight);
+        font-style: var(--primaryFontStyle);
+        line-height: var(--primaryLineHeight);
+        letter-spacing: var(--primaryLetterSpacing);
+        border-radius: var(--primaryBorderRadius);
+        border-width: var(--primaryBorderWidth);
+        border-color: var(--primaryBorderColor);
+        box-shadow: var(--primaryBoxShadow);
+        border: var(--primaryBorder);
+    }
+}
+
+.btn {
+    &--large {
+        font-size: 1.5rem;
+    }
+    &--medium {
+        font-size: 1rem;
+    }
+    &--small {
+        font-size: 1rem;
+    }
+}
