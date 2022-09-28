@@ -8,6 +8,8 @@
     {{-- <link rel="stylesheet preload" as="style" type="text/css" media="screen" href="{{url('/css/app.css')}}" /> --}}
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/vendor.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/@yield('file').css">
 
 

@@ -67,6 +67,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/header.scss":
+/*!************************************!*\
+  !*** ./resources/sass/header.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./resources/sass/footer.scss":
+/*!************************************!*\
+  !*** ./resources/sass/footer.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/home-page.scss":
 /*!***************************************!*\
   !*** ./resources/sass/home-page.scss ***!
@@ -83,7 +109,7 @@ __webpack_require__.r(__webpack_exports__);
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["css/home-page","css/vendor","css/global","/js/vendor"], () => (__webpack_exec__("./resources/js/app.js"), __webpack_exec__("./resources/sass/global.scss"), __webpack_exec__("./resources/sass/vendor.scss"), __webpack_exec__("./resources/sass/home-page.scss")));
+/******/ __webpack_require__.O(0, ["css/home-page","css/footer","css/header","css/vendor","css/global","/js/vendor"], () => (__webpack_exec__("./resources/js/app.js"), __webpack_exec__("./resources/sass/global.scss"), __webpack_exec__("./resources/sass/vendor.scss"), __webpack_exec__("./resources/sass/header.scss"), __webpack_exec__("./resources/sass/footer.scss"), __webpack_exec__("./resources/sass/home-page.scss")));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
