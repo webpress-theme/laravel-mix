@@ -33,6 +33,10 @@
 - Không được cập nhật file `resources/sass/vendor.scss`, trong trường hợp cần cập nhật file này thì cần báo lại để thảo luận
 - Tất cả các tham số về màu sắc, font cần được khai báo ở `resources/sass/global.scss` và sử dụng các biến này ở tất cả các nơi cần thiết, cấm hard code các thông số này
 - Mỗi khi tạo 1 page mới thì cần tạo file `resources/sass/TEN-PAGE.scss` và cập nhật file `webpack.mix.js` để compile file vừa tạo, không đc import tất cả các file `scss` vào chung 1 file vì nó sẽ tạo thành 1 file lớn
+- KHÔNG sử dụng các mixin tự tạo chỉ đc sử dụng mixin có sẵn của bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/ 
+- Sự dụng Media Query của bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/
+- Không được dùng file `reset.css` để reset các thuộc tính mặc định của các element
+- Sử dụng đúng grid system của bootstrap https://getbootstrap.com/docs/5.0/layout/grid/
   
 ## Cài đặt
 ### Cài đặt project
