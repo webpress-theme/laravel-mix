@@ -30,6 +30,10 @@
 - Chỉ được code vào file `scss` trong thư mục `resources/sass`, các file `scss` này sẽ được tự động compile thành file css trong thư mục `public/css`. Dùng lệnh `yarn watch` để compile scss tự động thành css. **KHÔNG ĐƯỢC CHỈNH SỬA FILE CSS TRỰC TIẾP**
 - Mỗi page cần tạo 1 file `scss` riêng cho page đó, 1 page không được load nhiều file `scss` của nhiều page (các file `resources/sass/vendor.scss` `resources/sass/global.scss` `resources/sass/header.scss` `resources/sass/footer.scss` sẽ được load vào tất cả các page)
 - HTML/CSS cần được làm theo chuẩn BEM https://getbem.com/
+- Không được cập nhật file `resources/sass/vendor.scss`, trong trường hợp cần cập nhật file này thì cần báo lại để thảo luận
+- Tất cả các tham số về màu sắc, font cần được khai báo ở `resources/sass/global.scss` và sử dụng các biến này ở tất cả các nơi cần thiết, cấm hard code các thông số này
+- Mỗi khi tạo 1 page mới thì cần tạo file `resources/sass/TEN-PAGE.scss` và cập nhật file `webpack.mix.js` để compile file vừa tạo, không đc import tất cả các file `scss` vào chung 1 file vì nó sẽ tạo thành 1 file lớn
+  
 ## Cài đặt
 ### Cài đặt project
 ```
