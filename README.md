@@ -6,11 +6,11 @@ Hướng dẫn sử dụng:
 
 - [Viết HTML và SCSS](#viết-html-và-scss)
     - [HTML](#html)
+        - [Ví dụ `home-page.blade.php`](#ví-dụ-homepagebladephp)
     - [SCSS](#scss)
         - [Cấu hình `webpack.mix.js`](#cấu-hình-webpackmixjs)
         - [Biên dịch SCSS](#biên-dịch-scss)
     - [Đường dẫn HTML](#đường-dẫn-đến-html)
-
 
 
 ## Cài đặt
@@ -61,6 +61,23 @@ Chạy host:
 
 ### HTML
 - được viết trong `resource/views` và đặt tên dưới dạng `[name].blade.php`
+
+#### Ví dụ `homepage.blade.php`
+
+```
+@section('file', 'home-page') //<link rel="stylesheet" href="./css/home-page.css">
+@section('page', 'home-page') //<div class="wrapper home-page">
+@extends('layout.master') //Kế thừa head, header, footer của layout/master.blade.php
+@section('content') //nội dung của homepage
+    <main class="main">
+        <h1>h1. Bootstrap heading</h1>
+
+    </main>
+@endsection
+
+```
+
+
     
 ### SCSS 
 - được viết ở thư mục `resources/sass`
