@@ -1,6 +1,6 @@
 Hướng dẫn sử dụng:
 Dự án cần môi trường xampp có phiên bản php8: https://www.apachefriends.org/download.html
-B1: Cấu hình kết nối với database:
+1. Cấu hình kết nối với database:
     + tạo 1 file có tên .env từ file .env.example
     - Cần chú ý trong .env (đây là phần cấu hình database):
         DB_CONNECTION=mysql
@@ -11,18 +11,23 @@ B1: Cấu hình kết nối với database:
         DB_PASSWORD=
 
 Cài đặt các package của dự án, chạy trong terminal của dự án
-B2: Cài đặt các package bằng composer: https://getcomposer.org/download/
+2. Cài đặt các package bằng composer: https://getcomposer.org/download/
     - composer i
-B3: Cài các package bằng npm: https://nodejs.org/en/download/
+3. Cài các package bằng npm: https://nodejs.org/en/download/
     - npm i
-B4: tạo bảng trong cơ sở dữ liệu:
+4. tạo bảng trong cơ sở dữ liệu:
     - php artisan migrate
-B5: Tạo key:
+5. Tạo key:
     - php artisan key:generate
-Bước 6: Chạy host:
+6. Chạy host:
     - php artisan serve
 
 HTML, CSS được viết trong thư mục resources/views:
+    Footer:
+    Header:
+    Master:
+        Home-page: sẽ được kế thừa footer, header từ master
+
 
 SCSS:
     - Scss được viết ở thư mục: resources/sass
