@@ -37,6 +37,7 @@
 - Sự dụng Media Query của bootstrap https://getbootstrap.com/docs/5.0/layout/breakpoints/
 - Không được dùng file `reset.css` để reset các thuộc tính mặc định của các element
 - Sử dụng đúng grid system của bootstrap https://getbootstrap.com/docs/5.0/layout/grid/
+- **Cấu trúc trong CSS gần GIỐNG với cấu trúc trong file html**
   
 ## Cài đặt
 ### Cài đặt project
