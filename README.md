@@ -46,8 +46,8 @@ git clone https://github.com/webpress-theme/laravel-mix.git
 ```
 ### Cài đặt laravel 
 
-Hướng dẫn https://laravel.com/docs/9.x/installation,
-Hướng dẫn cài đặt laravel-mix https://drive.google.com/file/d/1lMDgcGp8TKEa0lgbd8tDbXDwBWMOIQGE/view?usp=sharing
+Hướng dẫn cài đặt laravel-mix: https://drive.google.com/file/d/1lMDgcGp8TKEa0lgbd8tDbXDwBWMOIQGE/view?usp=sharing
+Tham khảo: https://laravel.com/docs/9.x/installation
 ### Cài đặt NPM package
 
 ```
