@@ -92,6 +92,8 @@ Mỗi template sẽ có các màu, font-size, font-family theo quy định. các
 
 Mỗi page sẽ load các file css theo thứ tự sau
 
+> Các file này đã được thêm sẵn vào file `master.blade.php` không cần tự thêm vào file *.blade.php của từng page 
+
 ```
 <link rel="stylesheet" href="./css/vendor.css" />
 <link rel="stylesheet" href="./css/global.css" />
