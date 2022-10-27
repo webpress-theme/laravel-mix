@@ -272,7 +272,7 @@ npm run watch
 ## Quy trình làm việc
 
 -   Mỗi mẫu thiết kế được làm trên một nhánh riêng. Tên nhánh được đặt theo tên mẫu thiết kế có trong file xd
-    -   Mẫu w02 --> làm việc trên branch w02
-    -   Mẫu w04 --> làm việc trên branch w04
+    -   Mẫu w02 --> checkout từ master và làm việc trên branch w02
+    -   Mẫu w04 --> checkout từ master và làm việc trên branch w04
     -   ...
 -   Sau khi hoàn thành công việc, thực hiện tạo PR vào nhánh staging/{tên nhánh}-v01 và add reviewer cho PR đó. Nên chia nhỏ công việc, thực hiện commit nhỏ và tạo PR thường xuyên.
