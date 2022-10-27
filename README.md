@@ -142,7 +142,7 @@
     }
 
     // Responsive mobile first
-    @media only screen and (max-width: 575) {
+    @media only screen and (max-width: 575px) {
     }
 
     @media only screen and (min-width: 576px) {
