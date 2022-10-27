@@ -1,4 +1,16 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/open-sans-v29-vietnamese-regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("../fonts/open-sans-v29-vietnamese-regular.woff") format("woff"),
+        url("../fonts/open-sans-v29-vietnamese-regular.ttf") format("truetype"),
+        url("../fonts/open-sans-v29-vietnamese-regular.svg#OpenSans")
+            format("svg");
+}
+
 :root {
+    font-family: "OpenSans";
+
     --color-1: #000000;
     --color-2: #000000;
     --color-3: #000000;
