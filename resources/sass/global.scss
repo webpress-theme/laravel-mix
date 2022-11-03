@@ -25,6 +25,23 @@
     --color-12: #000000;
     --color-13: #000000;
     --color-14: #000000;
+    /*
+    - Color-1: Primary (CTA)
+    - Color-2: Tiêu đề
+    - Color-3: Mô tả
+    - Color-4: Nền 1
+    - Color-5: Nền 2
+    - Color-6: Nền 3
+    - Color-7: Yếu tố phụ (Đường line, bullet symbol, icon)
+    - Color-8: Tương tác (Hover, Clicked, Drag, Tap, Focus, Pressed...)
+    - Color-9: black
+    - Color-10: white
+    - Color-11: info
+    - Color-12: error
+    - Color-13: success
+    - Color-14: warning
+    Màu sắc (Sử dụng tối đa 14 màu, từ màu 10 - 14: Không thay đổi; các màu còn lại có thể áp dụng với các thành phần khác nhau theo phong cách thiết kế)
+    */
     // Font-size Từ lớn đến bé, fs1 là lớn nhất
     --fs-1: 6rem;
     --fs-2: 5rem;
@@ -273,7 +290,84 @@
         border-radius: var(--rounded-10);
     }
 }
-
+.spacing-x {
+    &-1 {
+        padding: 0.5rem 0;
+    }
+    &-2 {
+        padding: 1rem 0;
+    }
+    &-3 {
+        padding: 1.5rem 0;
+    }
+    &-4 {
+        padding: 2rem 0;
+    }
+    &-5 {
+        padding: 3rem 0;
+    }
+    &-6 {
+        padding: 4rem 0;
+    }
+    &-7 {
+        padding: 5rem 0;
+    }
+    &-8 {
+        padding: 8rem 0;
+    }
+}
+.spacing-y {
+    &-1 {
+        padding: 0 0.5rem;
+    }
+    &-2 {
+        padding: 0 1rem;
+    }
+    &-3 {
+        padding: 0 1.5rem;
+    }
+    &-4 {
+        padding: 0 2rem;
+    }
+    &-5 {
+        padding: 0 3rem;
+    }
+    &-6 {
+        padding: 0 4rem;
+    }
+    &-7 {
+        padding: 0 5rem;
+    }
+    &-8 {
+        padding: 0 8rem;
+    }
+}
+.spacing-xy {
+    &-1 {
+        padding: 0.5rem;
+    }
+    &-2 {
+        padding: 1rem;
+    }
+    &-3 {
+        padding: 1.5rem;
+    }
+    &-4 {
+        padding: 2rem;
+    }
+    &-5 {
+        padding: 3rem;
+    }
+    &-6 {
+        padding: 4rem;
+    }
+    &-7 {
+        padding: 5rem;
+    }
+    &-8 {
+        padding: 8rem;
+    }
+}
 h1 {
     &.title {
         color: var(--color-1);
