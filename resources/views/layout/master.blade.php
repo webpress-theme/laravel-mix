@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- <link rel="stylesheet preload" as="style" type="text/css" media="screen" href="{{url('/css/app.css')}}" /> --}}
-    <link rel="stylesheet" href="./css/vendor.css" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/@yield('file').css">
+    <link rel="stylesheet" href="{{ mix('/css/' . View::getSection('file') . '.css') }}" />
+    <link rel="stylesheet" href="{{ mix('/css/vendor.css') }}" />
+    <link rel="stylesheet" href="{{ mix('/css/global.css') }}" />
+    <link rel="stylesheet" href="{{ mix('/css/header.css') }}" />
+    <link rel="stylesheet" href="{{ mix('/css/footer.css') }}" />
     <title>@yield('title')</title>
 
 

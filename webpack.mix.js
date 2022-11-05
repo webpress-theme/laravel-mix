@@ -17,3 +17,6 @@ mix.sass('resources/sass/vendor.scss', 'public/css');
 mix.sass('resources/sass/header.scss', 'public/css');
 mix.sass('resources/sass/footer.scss', 'public/css');
 mix.sass('resources/sass/home-page.scss', 'public/css');
+if (mix.inProduction()) {
+    mix.version();
+}
