@@ -13,6 +13,24 @@
     - [Tạo file scss](#tạo-file-scss)
     - [Biên dịch scss](#biên-dịch-scss)
   - [Quy trình làm việc](#quy-trình-làm-việc)
+- [Hướng dẫn review code HTML SCSS:](#hướng-dẫn-review-code-html-scss)
+  - [Kiểm tra code HTML](#kiểm-tra-code-html)
+    - [Kiểm tra cấu trúc page blade](#kiểm-tra-cấu-trúc-page-blade)
+    - [Kiểm tra số lượng page blade](#kiểm-tra-số-lượng-page-blade)
+    - [Kiểm tra chuẩn BEM](#kiểm-tra-chuẩn-bem)
+  - [Kiểm tra code SCSS](#kiểm-tra-code-scss)
+    - [Cấu trúc file scss](#kiểm-tra-code-scss)
+    - [Kiểm tra chuẩn BEM](#kie1bb83m-tra-chue1baa9n-bem-1)
+    - [Kiểm tra media query](#kiểm-tra-media-query)
+    - [Không inline css](#inline-css)
+    - [Kiểm tra Mixin](#kiểm-tra-mixin)
+    - [Kiểm màu sắc](#kiểm-tra-màu-sắc)
+    - [Kiểm tra line-height](#kiểm-tra-line-height)
+    - [Kiểm tra border](#kiểm-tra-border)
+    - [Kiểm tra Font family](#kiểm-tra-font-family)
+    - [Kiểm tra font-size](#kiểm-tra-font-family)
+    - [Kiểm tra font-weight](#kiểm-tra-font-weight)
+    - [Kiểm tra button-size](#kiểm-tra-button-size)
 
 ## Quy định
 
@@ -260,3 +278,103 @@ npm run watch
     -   Mẫu w04 --> checkout từ master và làm việc trên branch w04
     -   ...
 -   Sau khi hoàn thành công việc, thực hiện tạo PR vào nhánh staging/{tên nhánh}-v01 và add reviewer cho PR đó. Nên chia nhỏ công việc, thực hiện commit nhỏ và tạo PR thường xuyên.
+# Hướng dẫn review code HTML SCSS
+## Kiểm tra code HTML
+> Code HTML lưu ở thư mục `ressources/views`
+### Kiểm tra cấu trúc page blade
+>   Sử dụng chuẩn file master.blade.php ( KHÔNG ĐƯỢC THIẾU THÔNG TIN )
+
+> File blade.php phải có đủ các dữ liệu như sau:
+- Kế thừa từ file master.blade.php
+Tiêu đề cho page
+- Đường dẫn css: Tên file css phải giống với tên file blade
+- Đặt tên class: Tên class body giống mới với tên file blade
+- Nội dung home-page được chứa trong @section
+- Chỉ sử dụng Js bootstrap với các nghiệp vụ sau: Model, Tab, Collapse,
+- Icon sử dụng file .svg tải xuống theo file thiết kế. KHÔNG SỬ DỤNG BẤT KỲ THƯ VIỆN ICON NÀO BÊN NGOÀI ( Hỏi design).
+### Kiểm tra số lượng page blade
+- Gồm các bước sau:
+[đường dẫn repo]/tree/main/resources/views
+- Đối chiếu số lượng page với gói thiết kế được nhận
+### Kiểm tra chuẩn BEM
+- Nhấp tổ hợp phím `Ctrl+shift+p|cmd+shift+p`. Tìm kiếm cụm từ: Fold all
+- Kiểm tra tên class từng section
+- Kiểm tra class cha trong 1 section
+    - Bước 1: Search class cha
+    - Bước 2: Rà soát đảm bảo các section con đều chứa tên class cha
+
+| Thành phần  | Block (Khối) | Element (Phần tử) | Modifier (Sửa đổi) |
+| ------------- | ------------- | ------------- | ------------- |
+| Định nghĩa  | Là thực thể độc lập có ý nghĩa riêng. Tuy các block có thể được lồng vào nhau và tương tác với nhau, nhưng về mặt ngữ nghĩa các block vẫn bình đẳng, không có sự ưu tiên hoặc thứ bậc.  |Là một phần của block và không có ý nghĩa độc lập, hay có thể coi element là phần tử con của block, element được gắn về mặt ngữ nghĩa với block của nó.|Là sửa đổi trên một block hoặc element, được dùng để thay đổi vẻ ngoài, hành vi hoặc trạng thái của block hay element đó.|
+| Quy tắc đặt tên  | `<div class="block"></div>` | `<div class="block"> <span     class="block__elem">...</span> </div>`| `.block--color-black { }`|
+| Ví dụ  | `header, container, menu, checkbox, input` | `menu item, list item, checkbox caption, header title`| `disabled, highlighted, checked, fixed, size big, color yellow`|
+## Kiểm tra code SCSS
+### Cấu trúc file scss
+Sử dụng các rule trong file global
+> Chỉ import partial (một phần) của bootstrap ví dụ: 
+
+```
+@import '~bootstrap/scss/bootstrap-utilities';
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/_forms';
+@import '~bootstrap/scss/_buttons';
+```
+> Cần dùng phần nào thì import phần đó, không nên import thừa những thứ không sử dụng
+
+> Thông thường độ dài SCSS của 1 Page thường khoảng tầm 50 dòng scss, nếu dài hơn có thể bạn chưa tối ưu Bootstrap vào dự án hay thay thế bằng Bootstrap nếu như có thể
+### Kiểm tra chuẩn BEM
+-   Kiểm tra BEM giống như phần [BEM](#kiểm-tra-chuẩn-bem)
+### Kiểm tra media query
+-   Không dùng media query, dùng breakpoint của bootstrap
+Để kiểm tra thì sử dụng cú pháp sau search: `@media`
+### Inline CSS
+   >TUYỆT ĐỐI KHÔNG INLINE CSS
+-   Để kiểm tra thì sử dụng cú pháp sau search: `style=`
+### Kiểm tra Mixin
+-   Không sử dụng mixin tự tạo, dùng mixin của bootstrap
+-   Để kiểm tra thì sử dụng cú pháp sau search:  `@mixin`
+### Kiểm tra màu sắc
+-   Không hard code màu sắc
+-   Để kiểm tra thì sử dụng cú pháp sau search:  `color:`
+
+### Kiểm tra line-height
+-   Không sử dụng `line-height`
+-   Để kiểm tra thì sử dụng cú pháp sau search:  `line-height:`
+### Kiểm tra border
+-   Không hard code, tất cả `border` của thiết kế đều dùng của bootstrap
+-   Để kiểm tra thì sử dụng cú pháp sau search:  `border:`
+### Kiểm tra Font family
+-   Sử dụng 1 `font-family` và được khai ở file `global.scss`
+-   Để kiểm tra thì sử dụng cú pháp sau search:  `font-family:`
+### Kiểm tra font-size
+-   Không hard code, `font-size` đã được quy định trong file `global.scss`
+-   Để kiểm tra thì sử dụng cú pháp sau:  `font-size:`
+### Kiểm tra font-weight
+-   Không hard code, `font-weight` đã được quy định trong file `global.scss`
+-   Để kiểm tra thì sử dụng cú pháp sau:  `font-weight:`
+### Kiểm tra button-size
+-   Không hard code, `button-size` đã được quy định trong file global.scss hoặc sử dụng btn-size của Bootstrap
+-   Kiểm tra các class button trong scss của dự án xem đã dung chuẩn các button chưa.
+### Kiểm tra height
+-   Hạn chế fix cứng.( Trường hợp bất đắc dĩ )
+-   Đề kiểm tra sử dụng cú pháp sau search: `height:`
+### Kiểm tra weight
+-   Hạn chế fix cứng
+-   Đề kiểm tra sử dụng cú pháp sau search: `weight:`
+### Kiểm tra các thuộc tính reset SCSS
+>TUYỆT ĐỐI KHÔNG SỬ DỤNG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
