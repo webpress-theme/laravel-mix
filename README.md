@@ -142,23 +142,9 @@
     }
 
     // Responsive mobile first
-    @media only screen and (max-width: 575px) {
+    // Sử dụng breakpoint của bootstrap 5
     }
-
-    @media only screen and (min-width: 576px) {
-    }
-
-    @media only screen and (min-width: 768px) {
-    }
-
-    @media only screen and (min-width: 992px) {
-    }
-
-    @media only screen and (min-width: 1200px) {
-    }
-
-    @media only screen and (min-width: 1400px) {
-    }
+    } 
 }
 ```
 
