@@ -1,3 +1,111 @@
-.home-page h1 {
-  color: var(--primaryColor);
+.home-page {
+  overflow: hidden;
+}
+.home-page .dot--true .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.home-page .dot--true .owl-dots .owl-dot.active span {
+  width: 14px !important;
+  height: 14px !important;
+}
+.home-page .dot--true .owl-dots .owl-dot span {
+  width: 9px !important;
+  height: 9px !important;
+  margin: 0px 2.5px !important;
+  transition: all 0.3s ease;
+}
+.home-page .dot--color-9 .owl-dot.active span {
+  background-color: var(--color-9) !important;
+}
+.home-page .dot--color-9 .owl-dot span {
+  border: 1px solid var(--color-9) !important;
+  background-color: transparent !important;
+}
+.home-page .dot--color-10 .owl-dot.active span {
+  background-color: var(--color-10) !important;
+}
+.home-page .dot--color-10 .owl-dot span {
+  border: 1px solid var(--color-10) !important;
+  background-color: transparent !important;
+}
+.home-page .nav--true {
+  position: relative;
+}
+.home-page .nav--true .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.home-page .nav--true .owl-nav button {
+  border-radius: 50% !important;
+  background-color: var(--color-10) !important;
+}
+.home-page .nav--true .owl-nav .owl-prev:hover {
+  background-color: var(--color-1) !important;
+}
+.home-page .nav--true .owl-nav .owl-next:hover {
+  background-color: var(--color-1) !important;
+}
+.home-page .nav--true.nav--outside .owl-next {
+  position: absolute;
+  right: -75px;
+  top: -35px;
+}
+.home-page .nav--true.nav--outside .owl-prev {
+  position: absolute;
+  left: -75px;
+  top: -35px;
+}
+.home-page .nav--position-top-25 .owl-nav {
+  top: 25%;
+}
+.home-page .nav--position-top-25 .owl-nav .owl-next {
+  position: absolute;
+  right: -22px;
+}
+.home-page .nav--position-top-25 .owl-nav .owl-prev {
+  position: absolute;
+  left: -22px;
+}
+.home-page .nav--color-10 .owl-nav button {
+  background: var(--color-10) !important;
+}
+.home-page .nav--color-4 .owl-nav button {
+  background: var(--color-4) !important;
+}
+.home-page .hover-box-shadow:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.home-page .hover-box-shadow:hover .hover--color-1 {
+  color: var(--color-1);
+}
+.home-page .hover-box-shadow:hover .action--product {
+  display: block !important;
+}
+.home-page .hover-box-shadow-sm:hover {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.home-page .hover-box-shadow-sm:hover .hover--color-1 {
+  color: var(--color-1);
+}
+.home-page .hover-box-shadow-sm:hover .action--product {
+  display: block !important;
+}
+.home-page .hover-box-shadow-none:hover {
+  box-shadow: none;
+}
+.home-page .hover-box-shadow-none:hover .hover--color-1 {
+  color: var(--color-1);
+}
+.home-page .hover-box-shadow-none:hover .action--product {
+  display: block !important;
 }

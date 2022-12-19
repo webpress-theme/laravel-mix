@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6950" data-name="Rectangle 6950" width="24" height="24" transform="translate(419 2228)" fill="#1ba370" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_417" data-name="Mask Group 417" transform="translate(-419 -2228)" clip-path="url(#clip-path)">
+    <g id="download_1_" data-name="download (1)" transform="translate(419 2228)">
+      <g id="Group_18967" data-name="Group 18967">
+        <g id="Group_18966" data-name="Group 18966">
+          <path id="Path_877" data-name="Path 877" d="M23.847,11.533C23.633,11.24,18.524,4.352,12,4.352S.366,11.24.152,11.533a.792.792,0,0,0,0,.934C.366,12.76,5.475,19.648,12,19.648s11.633-6.888,11.848-7.181A.791.791,0,0,0,23.847,11.533ZM12,18.066c-4.806,0-8.969-4.572-10.2-6.066C3.03,10.5,7.184,5.934,12,5.934S20.968,10.505,22.2,12C20.97,13.5,16.816,18.066,12,18.066Z" fill="#1ba370"/>
+        </g>
+      </g>
+      <g id="Group_18969" data-name="Group 18969">
+        <g id="Group_18968" data-name="Group 18968">
+          <path id="Path_878" data-name="Path 878" d="M12,7.253A4.747,4.747,0,1,0,16.747,12,4.753,4.753,0,0,0,12,7.253Zm0,7.912A3.165,3.165,0,1,1,15.165,12,3.168,3.168,0,0,1,12,15.165Z" fill="#1ba370"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
