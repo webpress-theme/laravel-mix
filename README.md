@@ -236,10 +236,17 @@ Mỗi page sẽ load các file css theo thứ tự sau
 ```
 <link rel="stylesheet" href="./css/vendor.css" />
 <link rel="stylesheet" href="./css/global.css" />
-<link rel="stylesheet" href="./css/header.css" />
-<link rel="stylesheet" href="./css/footer.css" />
+<link rel="stylesheet" href="./css/_common.css" />
 <link rel="stylesheet" href="./css/@yield('file').css">
 ```
+**Chú ý vai trò của từng file: **
+
+```vendor.scss``` là nơi import các component con của Bootstrap, dùng phần nào thì import phần đó, KHÔNG IMPORT CẢ BOOTSTRAP
+
+```_common.scss``` là nơi viết header, footer, breadcrumb của dự án
+
+```global.scss``` là nơi khai báo mã màu, không được thay đổi cấu trúc
+
 
 ### Khai báo đường dẫn
 
