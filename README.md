@@ -36,7 +36,7 @@
 
 -   Sử dụng Laravel Blade Template để khai báo các page https://laravel.com/docs/9.x/views
 -   Chỉ được code vào file `scss` trong thư mục `resources/sass`, các file `scss` này sẽ được tự động compile thành file css trong thư mục `public/css`. Dùng lệnh `yarn watch` để compile scss tự động thành css. **KHÔNG ĐƯỢC CHỈNH SỬA FILE CSS TRỰC TIẾP**
--   Mỗi page cần tạo 1 file `scss` riêng cho page đó, 1 page không được load nhiều file `scss` của nhiều page (các file `resources/sass/vendor.scss` `resources/sass/global.scss` `resources/sass/header.scss` `resources/sass/footer.scss` sẽ được load vào tất cả các page)
+-   Mỗi page cần tạo 1 file `scss` riêng cho page đó, 1 page không được load nhiều file `scss` của nhiều page (các file `resources/sass/vendor.scss` `resources/sass/global.scss` `_common.scss` sẽ được load vào tất cả các page)
 -   HTML/CSS cần được làm theo chuẩn BEM https://getbem.com/
 -   Không được cập nhật file `resources/sass/vendor.scss`, trong trường hợp cần cập nhật file này thì cần báo lại để thảo luận
 -   Giữ nguyên cấu trúc `resources/sass/global.scss`
